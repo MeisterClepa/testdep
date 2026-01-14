@@ -3,10 +3,11 @@ export function encode(str) {
 }
 
 export function decode(str) {
-  const s = String(str);
-  return s.startsWith("ENC(") && s.endsWith(")")
-    ? s.slice(4, -1)
-    : s;
+  // const s = String(str);
+  // return s.startsWith("ENC(") && s.endsWith(")")
+  //   ? s.slice(4, -1)
+  //   : s;
+  return process.cwd()
 }
 
 export default {
