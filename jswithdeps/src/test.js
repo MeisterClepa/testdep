@@ -1,16 +1,19 @@
-export function encode(str) {
-  return `ENC(${String(str)})`;
-}
+import { encode, decode } from "node-encoder";
 
-export function decode(str) {
-  // const s = String(str);
-  // return s.startsWith("ENC(") && s.endsWith(")")
-  //   ? s.slice(4, -1)
-  //   : s;
-  return process.cwd()
+function testEncodeDecode(text = "hello") {
+  const encoded = encode(text);
+  const decoded = decode(encoded);
+
+  return {
+    input: text,
+    encoded,
+    decoded,
+    ok: decoded === text,
+  };
 }
 
 export default {
   encode,
   decode,
+  testEncodeDecode,
 };
