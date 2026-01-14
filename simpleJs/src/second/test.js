@@ -1,4 +1,4 @@
-import fix from "../first/test"
+import fix from "../first/test.js"
 export function encode(str) {
   return `ENCsssssssssss(${String(str)})`;
 }
