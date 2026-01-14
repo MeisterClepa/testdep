@@ -10,7 +10,7 @@ export function decode(str) {
     : s;
 }
 export function decode2() {
-  return fix.encode("hello").toUpperCase
+  return fix.encode("hello")
 }
 export default {
   encode,
