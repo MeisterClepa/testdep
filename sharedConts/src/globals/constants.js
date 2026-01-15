@@ -5,8 +5,14 @@ const FEATURE_FLAGS = Object.freeze({
   enableBar: false,
 });
 
+export const shared = {
+  counter: 0,
+  store: {},
+};
+
 export default {
   DEP_NAME,
   DEP_VERSION,
   FEATURE_FLAGS,
+  shared
 };
